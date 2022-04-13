@@ -1,0 +1,35 @@
+12:14:27 [background-preinit] INFO    --- o.h.v.i.u.Version - HV000001: Hibernate Validator 6.2.2.Final
+12:14:27 [main] INFO    --- g.c.e.G.GiraProjectApplication - Starting GiraProjectApplication using Java 11.0.12 on DESKTOP-FBCS80O with PID 16800 (C:\Users\trunghau\OneDrive\Desktop\gira\Gira-project\target\classes started by trunghau in C:\Users\trunghau\OneDrive\Desktop\gira\Gira-project)
+12:14:27 [main] INFO    --- g.c.e.G.GiraProjectApplication - No active profile set, falling back to 1 default profile: "default"
+12:14:31 [main] INFO    --- o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:14:31 [main] INFO    --- o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 0 JPA repository interfaces.
+12:14:33 [main] INFO    --- o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:14:33 [main] INFO    --- o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:14:33 [main] INFO    --- o.a.c.c.StandardService - Starting service [Tomcat]
+12:14:33 [main] INFO    --- o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.58]
+12:14:34 [main] INFO    --- o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+12:14:34 [main] INFO    --- o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6196 ms
+12:14:34 [main] ERROR   --- o.s.b.w.e.t.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthorizationFilter': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.core.userdetails.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+12:14:34 [main] INFO    --- o.a.c.c.StandardService - Stopping service [Tomcat]
+12:14:34 [main] WARN    --- o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+12:14:34 [main] INFO    --- o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+12:14:34 [main] ERROR   --- o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in gira.com.example.Giraproject.security.jwt.JwtAuthorizationFilter required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+

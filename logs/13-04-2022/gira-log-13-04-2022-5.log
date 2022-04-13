@@ -1,0 +1,40 @@
+12:08:03 [background-preinit] INFO    --- o.h.v.i.u.Version - HV000001: Hibernate Validator 6.2.2.Final
+12:08:03 [main] INFO    --- g.c.e.G.GiraProjectApplication - Starting GiraProjectApplication using Java 11.0.12 on DESKTOP-FBCS80O with PID 7648 (C:\Users\trunghau\OneDrive\Desktop\gira\Gira-project\target\classes started by trunghau in C:\Users\trunghau\OneDrive\Desktop\gira\Gira-project)
+12:08:03 [main] INFO    --- g.c.e.G.GiraProjectApplication - No active profile set, falling back to 1 default profile: "default"
+12:08:06 [main] WARN    --- o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [gira.com.example.Giraproject.GiraProjectApplication]; nested exception is java.io.FileNotFoundException: class path resource [db/jwt.properties] cannot be opened because it does not exist
+12:08:06 [main] INFO    --- o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+12:08:06 [main] ERROR   --- o.s.b.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [gira.com.example.Giraproject.GiraProjectApplication]; nested exception is java.io.FileNotFoundException: class path resource [db/jwt.properties] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.10.jar:2.5.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.5.10.jar:2.5.10]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:448) [spring-boot-2.5.10.jar:2.5.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) [spring-boot-2.5.10.jar:2.5.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) [spring-boot-2.5.10.jar:2.5.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-2.5.10.jar:2.5.10]
+	at gira.com.example.Giraproject.GiraProjectApplication.main(GiraProjectApplication.java:10) [classes/:?]
+Caused by: java.io.FileNotFoundException: class path resource [db/jwt.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:199) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:159) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:110) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:81) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:67) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.core.io.support.ResourcePropertySource.<init>(ResourcePropertySource.java:67) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.core.io.support.DefaultPropertySourceFactory.createPropertySource(DefaultPropertySourceFactory.java:37) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.context.annotation.ConfigurationClassParser.processPropertySource(ConfigurationClassParser.java:463) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:280) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ~[spring-context-5.3.16.jar:5.3.16]
+	... 13 more

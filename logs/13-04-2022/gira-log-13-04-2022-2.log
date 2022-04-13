@@ -1,0 +1,12 @@
+11:59:39 [background-preinit] INFO    --- o.h.v.i.u.Version - HV000001: Hibernate Validator 6.2.2.Final
+11:59:39 [main] INFO    --- g.c.e.G.GiraProjectApplication - Starting GiraProjectApplication using Java 11.0.12 on DESKTOP-FBCS80O with PID 10556 (C:\Users\trunghau\OneDrive\Desktop\gira\Gira-project\target\classes started by trunghau in C:\Users\trunghau\OneDrive\Desktop\gira\Gira-project)
+11:59:39 [main] INFO    --- g.c.e.G.GiraProjectApplication - No active profile set, falling back to 1 default profile: "default"
+11:59:45 [main] INFO    --- o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:59:45 [main] INFO    --- o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 0 JPA repository interfaces.
+11:59:47 [main] INFO    --- o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:59:48 [main] INFO    --- o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7927 ms
+11:59:48 [main] ERROR   --- o.s.b.w.e.t.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthorizationFilter': Unsatisfied dependency expressed through field 'helper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtHelper' defined in file [C:\Users\trunghau\OneDrive\Desktop\gira\Gira-project\target\classes\gira\com\example\Giraproject\security\jwt\JwtHelper.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [gira.com.example.Giraproject.security.jwt.JwtHelper]: Constructor threw exception; nested exception is java.lang.NullPointerException
+11:59:48 [main] WARN    --- o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+11:59:48 [main] INFO    --- o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
